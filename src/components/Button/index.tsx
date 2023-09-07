@@ -1,11 +1,5 @@
-import Modal from '@components/Modal'
-
 const Button = () => {
-  return (
-    <div>
-      Button <Modal />
-    </div>
-  )
+  return <button>Add</button>
 }
 
 export default Button
