@@ -1,11 +1,11 @@
-import Modal from "@components/Modal";
+import Modal from '@components/Modal'
 
 const Button = () => {
   return (
     <div>
       Button <Modal />
     </div>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

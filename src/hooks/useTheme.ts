@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
-const darkMedia = "(prefers-color-scheme: dark)";
+const darkMedia = '(prefers-color-scheme: dark)'
 
 const useTheme = () => {
-  const isDark = () => window.matchMedia(darkMedia).matches;
-  const [isDarkTheme, setIsDarkTheme] = useState(isDark);
+  const isDark = () => window.matchMedia(darkMedia).matches
+  const [isDarkTheme, setIsDarkTheme] = useState(isDark)
 
   const onThemeChanged = (mediaQuery: MediaQueryListEvent) => {
-    setIsDarkTheme(mediaQuery.matches);
-  };
+    setIsDarkTheme(mediaQuery.matches)
+  }
 
   useEffect(() => {
-    const media = window.matchMedia(darkMedia);
-    media.addEventListener("change", onThemeChanged);
+    const media = window.matchMedia(darkMedia)
+    media.addEventListener('change', onThemeChanged)
 
     return () => {
-      media.removeEventListener("change", onThemeChanged);
-    };
-  }, []);
+      media.removeEventListener('change', onThemeChanged)
+    }
+  }, [])
 
-  const theme = isDarkTheme ? "dark" : "light";
+  const theme = isDarkTheme ? 'dark' : 'light'
 
-  return theme;
-};
+  return theme
+}
 
-export default useTheme;
+export default useTheme
