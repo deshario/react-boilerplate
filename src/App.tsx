@@ -3,7 +3,6 @@ import viteLogo from "/vite.svg";
 import Modal from "@components/Modal";
 import Button from "@components/Button";
 import useTheme from "@hooks/useTheme";
-
 import "./App.css";
 
 function App() {
