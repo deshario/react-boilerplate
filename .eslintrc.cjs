@@ -12,8 +12,8 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'no-console': 'error',
+    'eqeqeq': ['error', 'always'],
     'no-use-before-define': 'error',
-    eqeqeq: ['error', 'always'],
     '@typescript-eslint/no-shadow': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
