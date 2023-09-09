@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react'
 const darkMedia = '(prefers-color-scheme: dark)'
 
 const useTheme = () => {
-  const isDark = () => window.matchMedia(darkMedia).matches
-  const [isDarkTheme, setIsDarkTheme] = useState(isDark)
+  const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia(darkMedia).matches)
 
   const onThemeChanged = (mediaQuery: MediaQueryListEvent) => {
     setIsDarkTheme(mediaQuery.matches)

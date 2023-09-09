@@ -13,7 +13,7 @@ function App() {
       <img src={viteLogo} alt='Vite logo' />
       <img src={reactLogo} alt='React logo' />
       <Modal />
-      <Button />
+      <Button text='Submit' />
     </>
   )
 }
